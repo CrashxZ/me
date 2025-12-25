@@ -1,0 +1,339 @@
+{
+  "basics": {
+    "name": "Mainak Mondal",
+    "title": "PhD Researcher — Autonomous Robotics & Networked Systems",
+    "location": "Mansfield, CT, USA",
+    "email": "mainakme2140@gmail.com",
+    "phone": "+1-860-634-2405",
+    "altPhone": "+91-7209530221",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/mainakm/",
+      "github": "https://github.com/crashxz",
+      "scholar": "https://scholar.google.com/citations?user=WGYA1csAAAAJ",
+      "resume": "main.pdf"
+    },
+    "summary": "Autonomy researcher building and shipping full-stack robotic systems. Focused on reinforcement learning schedulers, CARLA/ROS orchestration, and resilient V2X connectivity for ground and aerial robots."
+  },
+  "skills": {
+    "Languages": [
+      "Python",
+      "C++",
+      "C",
+      "C#",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "HTML/CSS",
+      "PHP"
+    ],
+    "Robotics": [
+      "ROS",
+      "Gazebo",
+      "MAVLink",
+      "PX4",
+      "ArduPilot",
+      "VESC",
+      "Quanser QCar",
+      "TurtleBot3"
+    ],
+    "Autonomy": [
+      "Lane Keeping",
+      "Obstacle Avoidance",
+      "SLAM",
+      "Waypoint Following",
+      "Closed-loop CARLA control",
+      "Infrared-guided landing"
+    ],
+    "Learning": [
+      "Reinforcement Learning",
+      "LoRA/PEFT",
+      "Prompt Engineering",
+      "Quantization"
+    ],
+    "Systems": [
+      "Nvidia Jetson TX2/Xavier/Orin",
+      "Raspberry Pi",
+      "HPC clusters (Slurm, A100)",
+      "FastAPI",
+      "React",
+      "Node/Express",
+      "AngularJS",
+      "MongoDB"
+    ],
+    "Networking": [
+      "OpenAirInterface 5G",
+      "SRSRAN",
+      "ZeroTier",
+      "Lightbridge",
+      "V2X",
+      "WebRTC"
+    ]
+  },
+  "experience": [
+    {
+      "organization": "University of Connecticut — Cyber-Physical Systems Laboratory",
+      "location": "Connecticut, USA",
+      "role": "Research Assistant",
+      "dates": "2022 – Present",
+      "highlights": [
+        "Designed and deployed MIND-CAVs, a browser-based CARLA orchestration system with LLM-assisted intent generation, FastAPI backend, React dashboard, and WebRTC streaming for closed-loop autonomy experiments.",
+        "Built autonomous driving features on F1Tenth and QCar robots using ROS on Nvidia Jetson TX2, delivering lane keeping, obstacle avoidance, SLAM, and autonomous waypoint following.",
+        "Integrated open-source 5G stacks (OpenAirInterface, SRSRAN) on robotic platforms to enable low-latency V2V/V2I communication.",
+        "Developed a reinforcement-learning charge-scheduling agent for mobile chargers in wireless powered communication networks, increasing sensor survival by ~20% while reducing travel distance by 5%.",
+        "Implemented autonomy on TurtleBot3 with ROS, including obstacle avoidance, SLAM, and waypoint following with a streamlined deployment pipeline."
+      ]
+    },
+    {
+      "organization": "NR Tomsk State University — High Performance Reconfigurable Systems Lab",
+      "location": "Tomsk, Russia",
+      "role": "R&D Engineer",
+      "dates": "2018 – 2022",
+      "highlights": [
+        "Built zero-trust long-range UAV control using ROS, MAVLink, Lightbridge, and ZeroTier for intercontinental operations.",
+        "Engineered infrared-guided multirotor UAV landing for GPS-denied environments, improving landing precision by ~40% on mobile pads.",
+        "Designed great-circle return-to-home control using PX4Flow for fail-safe navigation in GNSS-denied settings.",
+        "Developed medical/emergency delivery drones with automated payload handling during COVID-19.",
+        "Created an autonomous scout/attack UAV with radar-based threat detection and AlexNet-based interception, plus a ruggedized scout tank for hazardous environments."
+      ]
+    },
+    {
+      "organization": "Spar Up Sports Technologies Limited",
+      "location": "Pune, India",
+      "role": "Developer",
+      "dates": "2017 – 2018",
+      "highlights": [
+        "Delivered APIs for the MEAN stack platform and optimized a hybrid Ionic app, cutting load times by 300%.",
+        "Partnered with clients to gather requirements, design mockups, and deliver tailored features end-to-end."
+      ]
+    },
+    {
+      "organization": "Tata Technologies Limited",
+      "location": "Jamshedpur, India",
+      "role": "Intern: Developer",
+      "dates": "2016 (Nov – Dec)",
+      "highlights": [
+        "Redesigned a plant complaint management system for the web, improving accessibility and enterprise integration.",
+        "Built the system with a C# backend and ASP.NET frontend following SOLID principles and integrated with inventory and general management tools."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "mind-cavs",
+      "title": "MIND-CAVs CARLA Orchestration",
+      "impact": "Closed-loop CARLA autonomy with LLM intent, web telemetry, and dataset capture.",
+      "tags": ["CARLA", "ROS", "FastAPI", "React", "WebRTC", "LLM"],
+      "details": [
+        "Browser-based orchestration of CARLA scenarios with intent generation via LLM prompts and guardrails.",
+        "FastAPI control plane with scenario authoring, safety checks, and dataset export hooks.",
+        "React dashboard with live WebRTC streaming, telemetry overlays, and scenario control widgets.",
+        "Designed for rapid experiment iteration and reproducible autonomy benchmarks."
+      ],
+      "code": "https://github.com/crashxz/mind-cavs",
+      "demo": "",
+      "related": []
+    },
+    {
+      "slug": "rl-charge-scheduler",
+      "title": "DQN+ Charge Scheduling Agent",
+      "impact": "Boosted wireless sensor uptime by ~20% while cutting charger travel by 5%.",
+      "tags": ["Reinforcement Learning", "DQN", "Scheduling", "Wireless Power", "Optimization"],
+      "details": [
+        "Trained a DQN-based agent to route mobile chargers across wireless powered sensor networks.",
+        "Modeled energy dynamics and mobility costs to balance coverage and efficiency.",
+        "Delivered survivability gains with reduced travel overhead; deployable with ROS hooks."
+      ],
+      "code": "https://github.com/crashxz/rl-charge-scheduler",
+      "demo": "",
+      "related": []
+    },
+    {
+      "slug": "ir-precision-landing",
+      "title": "Infrared-Guided UAV Precision Landing",
+      "impact": "Improved autonomous landing accuracy by ~40% in GPS-denied settings.",
+      "tags": ["UAV", "Landing", "PX4", "Computer Vision", "Infrared"],
+      "details": [
+        "Infrared beacon-guided landing routine for multirotor UAVs in GNSS-denied zones.",
+        "Combined PX4Flow sensing with great-circle approach planning for safety.",
+        "Prototype validated on mobile landing pads with higher precision."
+      ],
+      "code": "https://github.com/crashxz/ir-landing",
+      "demo": "",
+      "related": [
+        "Program for Precise Landing of an Unmanned Aerial Vehicle Using Infrared Beacons (FIPS Certificate #2021610731)"
+      ]
+    },
+    {
+      "slug": "radar-scout-uav",
+      "title": "Autonomous Scout/Attack UAV & Ruggedized Tank",
+      "impact": "Radar-triggered threat detection with AlexNet interception and a rugged scout tank for hazardous terrain.",
+      "tags": ["UAV", "Radar", "Computer Vision", "AlexNet", "Robotics", "Perception"],
+      "details": [
+        "Designed a radar-based threat detection system that activates autonomous scan routines.",
+        "Implemented AlexNet-based CV pipeline for aerial threat interception with a net-gun mechanism.",
+        "Built a rugged scout tank for search-and-rescue in radiation-affected, rough terrain with heavy payload support."
+      ],
+      "code": "https://github.com/crashxz/radar-scout-uav",
+      "demo": "",
+      "related": []
+    },
+    {
+      "slug": "gnss-failsafe-nav",
+      "title": "Fail-Safe Navigation in GNSS-Denied Environments",
+      "impact": "Great-circle return-to-home and PX4Flow-based guidance for resilient UAV navigation.",
+      "tags": ["Navigation", "PX4Flow", "UAV", "Fail-Safe", "GNSS-Denied"],
+      "details": [
+        "Developed great-circle control logic to return UAVs safely when GNSS drops.",
+        "Fused PX4Flow optical flow with inertial data for short-range odometry.",
+        "Hardened behavior for autonomous recovery and landing on mobile pads."
+      ],
+      "code": "https://github.com/crashxz/gnss-failsafe-nav",
+      "demo": "",
+      "related": []
+    },
+    {
+      "slug": "5g-ran-dashboard",
+      "title": "5G RAN Dashboard (srsRAN & OpenAirInterface)",
+      "impact": "Unified telemetry and control panel for lab-scale 5G RAN experiments.",
+      "tags": ["5G", "srsRAN", "OpenAirInterface", "Networking", "Dashboard"],
+      "details": [
+        "Aggregated KPIs and logs from srsRAN/OpenAirInterface into a single dashboard.",
+        "Provided controls for rapid reconfiguration of radio parameters during trials.",
+        "Built for low-latency observability to support V2X and robotics experiments."
+      ],
+      "code": "https://github.com/crashxz/5g-ran-dashboard",
+      "demo": "",
+      "related": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. (Pursuing)",
+      "field": "Computer Science",
+      "institution": "University of Connecticut, USA",
+      "dates": "Expected 2026",
+      "gpa": "3.96/4.0"
+    },
+    {
+      "degree": "M.S.",
+      "field": "Computer Science",
+      "institution": "Tomsk State University, Russia",
+      "dates": "2020",
+      "gpa": "5.00/5.0"
+    },
+    {
+      "degree": "Bachelor's",
+      "field": "Computer Applications",
+      "institution": "Vellore Institute of Technology, India",
+      "dates": "2018"
+    }
+  ],
+  "publications": {
+    "Journal": [
+      {
+        "title": "Offline Navigation (Homing) of Aerial Vehicles (Quadcopters) in GPS-Denied Environments",
+        "authors": "M. Mondal, S. Poslavskiy",
+        "venue": "Unmanned Systems",
+        "year": 2021
+      },
+      {
+        "title": "Designing LBP-Descriptor for Reconfigurable Computing Environments",
+        "authors": "D.V. Shashev, A.A. Taganov, M. Mondal, M.V. Okunsky",
+        "venue": "Journal of Physics: Conference Series",
+        "year": 2020
+      }
+    ],
+    "Conference": [
+      {
+        "title": "Camera Assisted Autonomous UAV Landing",
+        "authors": "M. Mondal, S. Shidlovskiy, D. Shashev",
+        "venue": "DCCN Workshop Proceedings",
+        "year": 2020
+      },
+      {
+        "title": "Non-GNSS Navigation Systems in Aerial Vehicles (Multi-Rotors)",
+        "authors": "M. Mondal, S. Shidlovskiy, D. Shashev, M. Khaddour",
+        "venue": "2021 International Conference on Information Technology (ICIT)",
+        "year": 2021
+      },
+      {
+        "title": "Survey of Denoising Methods for Inertial Sensor Measurements",
+        "authors": "M. Khaddour, S. Shidlovskiy, D. Shashev, M. Mondal",
+        "venue": "International Conference on Information Technology (ICIT)",
+        "year": 2021
+      },
+      {
+        "title": "Aadhaar (India): A National Biometric Identification Program (Experience and Implementation)",
+        "authors": "M. Mondal, S.L. Minkov",
+        "venue": "Innovatika",
+        "year": 2019
+      },
+      {
+        "title": "Reconfigurable Flight-Controller Design in Simulink for Test-Implementing Interoperability of Components and Prototyping",
+        "authors": "M. Mondal, M.V. Okunskiy",
+        "venue": "Intelligent Systems of the 4th Industrial Revolution",
+        "year": 2022
+      },
+      {
+        "title": "Autonomous Infrared-Guided UAV Precision Landing System",
+        "authors": "M. Mondal, S.V. Shidlovsky, D.V. Shashev, M.V. Okunsky",
+        "venue": "Distributed Computer and Communication Networks: 24th International Conference",
+        "year": 2021
+      },
+      {
+        "title": "Implementation of an Open Source Communication Protocol (MAVLink) Between a Flight Controller and an On-Board Computer",
+        "authors": "M. Mondal",
+        "venue": "Innovatika",
+        "year": 2021
+      },
+      {
+        "title": "UAV Platform for Testing Autonomous Navigation Algorithms",
+        "authors": "M. Mondal, S.V. Shidlovskiy",
+        "venue": "Innovatika",
+        "year": 2020
+      },
+      {
+        "title": "Digital India: E-Government Initiative",
+        "authors": "M. Mondal, S.L. Minkov",
+        "venue": "Innovatika",
+        "year": 2020
+      },
+      {
+        "title": "Google Cartographer for Navigation and Mapping (SLAM)",
+        "authors": "M. Mondal, S.I. Poslavskiy",
+        "venue": "Innovatika",
+        "year": 2020
+      },
+      {
+        "title": "Cellular Network Control in Unmanned Aerial Vehicles",
+        "authors": "M. Mondal, S.V. Shidlovskiy",
+        "venue": "Innovatika",
+        "year": 2020
+      },
+      {
+        "title": "Aadhaar (India): National Biometric Identification Program (Experience and Implementation)",
+        "authors": "M. Mondal, S.L. Minkov",
+        "venue": "Innovatika-2019: Proceedings of the XV International School-Conference",
+        "year": 2019
+      },
+      {
+        "title": "Integration of SLAM and Obstacle Avoidance Algorithms",
+        "authors": "S.I. Poslavskiy, M. Mondal",
+        "venue": "Innovatika-2019: Proceedings of the XV International School-Conference",
+        "year": 2019
+      }
+    ]
+  },
+  "patents": [
+    {
+      "title": "Program for Precise Landing of an Unmanned Aerial Vehicle Using Infrared Beacons",
+      "certificate": "FIPS Certificate #2021610731",
+      "url": ""
+    },
+    {
+      "title": "Automatic UAV Control System for a Given Trajectory",
+      "certificate": "FIPS Certificate #2019664877",
+      "url": ""
+    }
+  ]
+}
