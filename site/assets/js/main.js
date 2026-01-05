@@ -106,6 +106,8 @@ function renderPublications(data) {
     pubs.forEach((p) => all.push({ ...p, group }));
   });
   const selected = all.slice(0, 4);
+  const selectedTitles = new Set(selected.map((p) => p.title));
+  const remaining = all.filter((p) => !selectedTitles.has(p.title));
 
   function pubMarkup(p) {
     const title = p.url
@@ -122,7 +124,7 @@ function renderPublications(data) {
   }
 
   selectedContainer.innerHTML = selected.map(pubMarkup).join('');
-  allContainer.innerHTML = all.map(pubMarkup).join('');
+  allContainer.innerHTML = remaining.map(pubMarkup).join('');
 
   const toggle = document.getElementById('toggle-pubs');
   toggle?.addEventListener('click', () => {
