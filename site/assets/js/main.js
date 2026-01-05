@@ -108,10 +108,15 @@ function renderPublications(data) {
   const selected = all.slice(0, 4);
 
   function pubMarkup(p) {
+    const title = p.url
+      ? `<a href="${p.url}" target="_blank" rel="noreferrer">${p.title}</a>`
+      : p.title;
+    const venue = p.venue || 'Publication';
+    const year = p.year ? ` (${p.year})` : '';
     return `
       <div class="pub">
-        <h4>${p.title}</h4>
-        <div class="venue">${p.authors} — ${p.venue} (${p.year})</div>
+        <h4>${title}</h4>
+        <div class="venue">${p.authors} — ${venue}${year}</div>
       </div>
     `;
   }
@@ -144,6 +149,9 @@ function renderProjectPage(data, slug) {
   const demoLinkEl = document.getElementById('project-demo-link');
   const relatedEl = document.getElementById('related-list');
   const archImg = document.getElementById('arch-img');
+  const demoSection = document.getElementById('project-demo-section');
+  const demoContainer = document.getElementById('project-demo');
+  const archSection = document.getElementById('project-arch-section');
 
   if (titleEl) titleEl.textContent = project.title;
   if (impactEl) impactEl.textContent = project.impact;
@@ -151,7 +159,38 @@ function renderProjectPage(data, slug) {
   if (tagsEl) tagsEl.innerHTML = project.tags.map((t) => `<span class="chip">${t}</span>`).join('');
   if (codeEl) codeEl.href = project.code || '#';
   if (demoLinkEl) demoLinkEl.href = project.demo || '#';
-  if (archImg) archImg.src = `../assets/img/${project.slug}-arch.png`;
+  if (demoLinkEl && !project.demo) demoLinkEl.classList.add('hidden');
+  if (archImg && project.archImage) archImg.src = project.archImage;
+
+  if (demoSection && demoContainer) {
+    demoContainer.innerHTML = '';
+    if (project.videos && project.videos.length) {
+      project.videos.forEach((video, index) => {
+        const wrapper = document.createElement('div');
+        if (index > 0) wrapper.style.marginTop = '12px';
+        const label = video.label ? `<p class="muted">${video.label}</p>` : '';
+        wrapper.innerHTML = `
+          ${label}
+          <video controls width="100%">
+            <source src="${video.src}" type="${video.type}">
+            Your browser does not support the video tag.
+          </video>
+        `;
+        demoContainer.appendChild(wrapper);
+      });
+      demoSection.classList.remove('hidden');
+    } else {
+      demoSection.classList.add('hidden');
+    }
+  }
+
+  if (archSection) {
+    if (project.archImage) {
+      archSection.classList.remove('hidden');
+    } else {
+      archSection.classList.add('hidden');
+    }
+  }
 
   if (relatedEl) {
     if (project.related && project.related.length) {
@@ -162,8 +201,47 @@ function renderProjectPage(data, slug) {
   }
 }
 
+function setupThemeToggle() {
+  let stored = null;
+  try {
+    stored = localStorage.getItem('theme');
+  } catch (err) {
+    stored = null;
+  }
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = stored ? stored === 'dark' : prefersDark;
+  const body = document.body;
+  const root = document.documentElement;
+
+  function applyTheme(dark) {
+    body.classList.toggle('theme-dark', dark);
+    root.classList.toggle('theme-dark', dark);
+    if (toggle) toggle.textContent = dark ? 'Light mode' : 'Dark mode';
+    try {
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    } catch (err) {
+      // Ignore storage errors (private mode, file://, etc.).
+    }
+  }
+
+  let toggle = document.getElementById('theme-toggle');
+  if (!toggle) {
+    toggle = document.createElement('button');
+    toggle.id = 'theme-toggle';
+    toggle.type = 'button';
+    toggle.className = 'btn ghost small theme-toggle floating';
+    document.body.appendChild(toggle);
+  }
+
+  applyTheme(isDark);
+  toggle.addEventListener('click', () => {
+    applyTheme(!body.classList.contains('theme-dark'));
+  });
+}
+
 async function init() {
   try {
+    setupThemeToggle();
     const data = await loadData();
     const page = document.body.dataset.page;
     if (page === 'home') {

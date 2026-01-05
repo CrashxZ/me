@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Mainak Mondal",
-    "title": "PhD Researcher — Autonomous Robotics & Networked Systems",
+    "title": "PhD Researcher \u2014 Autonomous Robotics & Networked Systems",
     "location": "Mansfield, CT, USA",
     "email": "mainakme2140@gmail.com",
     "phone": "+1-860-634-2405",
@@ -71,10 +71,10 @@
   },
   "experience": [
     {
-      "organization": "University of Connecticut — Cyber-Physical Systems Laboratory",
+      "organization": "University of Connecticut \u2014 Cyber-Physical Systems Laboratory",
       "location": "Connecticut, USA",
       "role": "Research Assistant",
-      "dates": "2022 – Present",
+      "dates": "2022 \u2013 Present",
       "highlights": [
         "Designed and deployed MIND-CAVs, a browser-based CARLA orchestration system with LLM-assisted intent generation, FastAPI backend, React dashboard, and WebRTC streaming for closed-loop autonomy experiments.",
         "Built autonomous driving features on F1Tenth and QCar robots using ROS on Nvidia Jetson TX2, delivering lane keeping, obstacle avoidance, SLAM, and autonomous waypoint following.",
@@ -84,10 +84,10 @@
       ]
     },
     {
-      "organization": "NR Tomsk State University — High Performance Reconfigurable Systems Lab",
+      "organization": "NR Tomsk State University \u2014 High Performance Reconfigurable Systems Lab",
       "location": "Tomsk, Russia",
       "role": "R&D Engineer",
-      "dates": "2018 – 2022",
+      "dates": "2018 \u2013 2022",
       "highlights": [
         "Built zero-trust long-range UAV control using ROS, MAVLink, Lightbridge, and ZeroTier for intercontinental operations.",
         "Engineered infrared-guided multirotor UAV landing for GPS-denied environments, improving landing precision by ~40% on mobile pads.",
@@ -100,7 +100,7 @@
       "organization": "Spar Up Sports Technologies Limited",
       "location": "Pune, India",
       "role": "Developer",
-      "dates": "2017 – 2018",
+      "dates": "2017 \u2013 2018",
       "highlights": [
         "Delivered APIs for the MEAN stack platform and optimized a hybrid Ionic app, cutting load times by 300%.",
         "Partnered with clients to gather requirements, design mockups, and deliver tailored features end-to-end."
@@ -110,7 +110,7 @@
       "organization": "Tata Technologies Limited",
       "location": "Jamshedpur, India",
       "role": "Intern: Developer",
-      "dates": "2016 (Nov – Dec)",
+      "dates": "2016 (Nov \u2013 Dec)",
       "highlights": [
         "Redesigned a plant complaint management system for the web, improving accessibility and enterprise integration.",
         "Built the system with a C# backend and ASP.NET frontend following SOLID principles and integrated with inventory and general management tools."
@@ -119,90 +119,138 @@
   ],
   "projects": [
     {
-      "slug": "mind-cavs",
-      "title": "MIND-CAVs CARLA Orchestration",
-      "impact": "Closed-loop CARLA autonomy with LLM intent, web telemetry, and dataset capture.",
-      "tags": ["CARLA", "ROS", "FastAPI", "React", "WebRTC", "LLM"],
-      "details": [
-        "Browser-based orchestration of CARLA scenarios with intent generation via LLM prompts and guardrails.",
-        "FastAPI control plane with scenario authoring, safety checks, and dataset export hooks.",
-        "React dashboard with live WebRTC streaming, telemetry overlays, and scenario control widgets.",
-        "Designed for rapid experiment iteration and reproducible autonomy benchmarks."
+      "slug": "mindcav",
+      "title": "MINDCAV AutoLLM Dashboard",
+      "impact": "CARLA AI-in-the-loop dashboard with LLM intent, realtime telemetry, and dataset capture.",
+      "tags": [
+        "CARLA",
+        "FastAPI",
+        "React",
+        "Tailwind",
+        "WebRTC",
+        "LLM"
       ],
-      "code": "https://github.com/crashxz/mind-cavs",
+      "details": [
+        "FastAPI backend orchestrates CARLA scenarios and WebSocket control flows.",
+        "React/Tailwind dashboard with telemetry overlays, control panels, and intent tooling.",
+        "Dual video paths (MJPEG and WebRTC) for low-latency monitoring.",
+        "Frame capture pipeline exports telemetry and image datasets for experiments."
+      ],
+      "code": "https://github.com/CrashxZ/AutoLLM",
       "demo": "",
+      "videos": [
+        {
+          "src": "../assets/video/mindcav1.webm",
+          "type": "video/webm",
+          "label": "Telemetry and orchestration flow"
+        },
+        {
+          "src": "../assets/video/mindcav2.webm",
+          "type": "video/webm",
+          "label": "Scenario control and intent capture"
+        }
+      ],
+      "archImage": "",
       "related": []
     },
     {
-      "slug": "rl-charge-scheduler",
-      "title": "DQN+ Charge Scheduling Agent",
-      "impact": "Boosted wireless sensor uptime by ~20% while cutting charger travel by 5%.",
-      "tags": ["Reinforcement Learning", "DQN", "Scheduling", "Wireless Power", "Optimization"],
-      "details": [
-        "Trained a DQN-based agent to route mobile chargers across wireless powered sensor networks.",
-        "Modeled energy dynamics and mobility costs to balance coverage and efficiency.",
-        "Delivered survivability gains with reduced travel overhead; deployable with ROS hooks."
+      "slug": "unidash5g",
+      "title": "5G RAN Dashboard (srsRAN + OAI)",
+      "impact": "Zero-install 5G telemetry dashboard with a unified schema for srsRAN and OpenAirInterface.",
+      "tags": [
+        "5G",
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Recharts",
+        "Vercel"
       ],
-      "code": "https://github.com/crashxz/rl-charge-scheduler",
-      "demo": "",
+      "details": [
+        "Unified JSON schema ingests snapshots from srsRAN and OAI pipelines.",
+        "Realtime UE views and rolling charts for downlink/uplink metrics.",
+        "Simple inference layer flags drops, low CQI, and bitrate trends.",
+        "Serverless ingest API and persistent history for quick triage."
+      ],
+      "code": "https://github.com/CrashxZ/UniDash5g",
+      "demo": "https://af-25.vercel.app/",
+      "videos": [
+        {
+          "src": "../assets/video/oai.mp4",
+          "type": "video/mp4",
+          "label": "OAI telemetry view"
+        },
+        {
+          "src": "../assets/video/srs.mp4",
+          "type": "video/mp4",
+          "label": "srsRAN telemetry view"
+        }
+      ],
+      "archImage": "",
       "related": []
     },
     {
-      "slug": "ir-precision-landing",
-      "title": "Infrared-Guided UAV Precision Landing",
-      "impact": "Improved autonomous landing accuracy by ~40% in GPS-denied settings.",
-      "tags": ["UAV", "Landing", "PX4", "Computer Vision", "Infrared"],
-      "details": [
-        "Infrared beacon-guided landing routine for multirotor UAVs in GNSS-denied zones.",
-        "Combined PX4Flow sensing with great-circle approach planning for safety.",
-        "Prototype validated on mobile landing pads with higher precision."
+      "slug": "gym-track",
+      "title": "Gym Reps Tracker",
+      "impact": "Vite + React tracker for workout plans, set counts, and weekly progress.",
+      "tags": [
+        "React",
+        "Vite",
+        "Chart.js",
+        "Tailwind",
+        "PWA"
       ],
-      "code": "https://github.com/crashxz/ir-landing",
-      "demo": "",
-      "related": [
-        "Program for Precise Landing of an Unmanned Aerial Vehicle Using Infrared Beacons (FIPS Certificate #2021610731)"
-      ]
-    },
-    {
-      "slug": "radar-scout-uav",
-      "title": "Autonomous Scout/Attack UAV & Ruggedized Tank",
-      "impact": "Radar-triggered threat detection with AlexNet interception and a rugged scout tank for hazardous terrain.",
-      "tags": ["UAV", "Radar", "Computer Vision", "AlexNet", "Robotics", "Perception"],
       "details": [
-        "Designed a radar-based threat detection system that activates autonomous scan routines.",
-        "Implemented AlexNet-based CV pipeline for aerial threat interception with a net-gun mechanism.",
-        "Built a rugged scout tank for search-and-rescue in radiation-affected, rough terrain with heavy payload support."
+        "Configurable workout plan with day-by-day exercise lists and targets.",
+        "Local progress tracking for completed sets and weekly checklists.",
+        "Chart.js visualizations for quick progress review.",
+        "PWA-ready build setup for offline-friendly tracking."
       ],
-      "code": "https://github.com/crashxz/radar-scout-uav",
-      "demo": "",
+      "code": "https://github.com/CrashxZ/GymTrack",
+      "demo": "https://eclectic-scone-f28fbd.netlify.app/",
+      "videos": [],
+      "archImage": "",
       "related": []
     },
     {
-      "slug": "gnss-failsafe-nav",
-      "title": "Fail-Safe Navigation in GNSS-Denied Environments",
-      "impact": "Great-circle return-to-home and PX4Flow-based guidance for resilient UAV navigation.",
-      "tags": ["Navigation", "PX4Flow", "UAV", "Fail-Safe", "GNSS-Denied"],
-      "details": [
-        "Developed great-circle control logic to return UAVs safely when GNSS drops.",
-        "Fused PX4Flow optical flow with inertial data for short-range odometry.",
-        "Hardened behavior for autonomous recovery and landing on mobile pads."
+      "slug": "dji-follow-me",
+      "title": "DJI IR + AprilTag Tracking",
+      "impact": "Monocular AprilTag tracking for DJI A3/N3 with assisted landing and follow modes.",
+      "tags": [
+        "DJI",
+        "AprilTag",
+        "ROS",
+        "UAV",
+        "Vision"
       ],
-      "code": "https://github.com/crashxz/gnss-failsafe-nav",
+      "details": [
+        "ROS workspace scripts for camera streaming and AprilTag detection.",
+        "Assisted landing workflow driven by AprilTag pose estimation.",
+        "Follow-me mode to track and maintain relative position to tags."
+      ],
+      "code": "https://github.com/CrashxZ/DJIFollowMe",
       "demo": "",
+      "videos": [],
+      "archImage": "",
       "related": []
     },
     {
-      "slug": "5g-ran-dashboard",
-      "title": "5G RAN Dashboard (srsRAN & OpenAirInterface)",
-      "impact": "Unified telemetry and control panel for lab-scale 5G RAN experiments.",
-      "tags": ["5G", "srsRAN", "OpenAirInterface", "Networking", "Dashboard"],
-      "details": [
-        "Aggregated KPIs and logs from srsRAN/OpenAirInterface into a single dashboard.",
-        "Provided controls for rapid reconfiguration of radio parameters during trials.",
-        "Built for low-latency observability to support V2X and robotics experiments."
+      "slug": "tello-coordinate-system",
+      "title": "Tello Coordinate System Helper",
+      "impact": "ENU/NED coordinate helpers for DJI Tello flight commands.",
+      "tags": [
+        "DJI Tello",
+        "Python",
+        "ENU/NED"
       ],
-      "code": "https://github.com/crashxz/5g-ran-dashboard",
+      "details": [
+        "Coordinate transform helper wraps easytello commands.",
+        "Delta-based move API for consistent coordinate control.",
+        "Lightweight utility for rapid Tello prototyping."
+      ],
+      "code": "https://github.com/CrashxZ/TelloCoordinateSystem",
       "demo": "",
+      "videos": [],
+      "archImage": "",
       "related": []
     }
   ],
@@ -229,98 +277,132 @@
     }
   ],
   "publications": {
-    "Journal": [
+    "Publications": [
       {
-        "title": "Offline Navigation (Homing) of Aerial Vehicles (Quadcopters) in GPS-Denied Environments",
-        "authors": "M. Mondal, S. Poslavskiy",
-        "venue": "Unmanned Systems",
-        "year": 2021
+        "title": "Deep Q-Learning-Based Mobile Charger Path Planning in Wireless Powered Communication Networks",
+        "authors": "M Mondal, F Dou, J Bi, S Han",
+        "venue": "ACM Transactions on Embedded Computing Systems 24 (6), 1-32",
+        "year": 2025,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:0EnyYjriUFMC"
       },
       {
-        "title": "Designing LBP-Descriptor for Reconfigurable Computing Environments",
-        "authors": "D.V. Shashev, A.A. Taganov, M. Mondal, M.V. Okunsky",
-        "venue": "Journal of Physics: Conference Series",
-        "year": 2020
-      }
-    ],
-    "Conference": [
-      {
-        "title": "Camera Assisted Autonomous UAV Landing",
-        "authors": "M. Mondal, S. Shidlovskiy, D. Shashev",
-        "venue": "DCCN Workshop Proceedings",
-        "year": 2020
+        "title": "Robust and Safe Multi-Agent Reinforcement Learning Framework with Communication for Autonomous Vehicles",
+        "authors": "K Smith, Z Zhang, HM Ahmad, E Sabouni, M Mondal, S Han, W Li, F Miao",
+        "venue": "arXiv preprint arXiv:2506.00982",
+        "year": 2025,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:hqOjcs7Dif8C"
       },
       {
-        "title": "Non-GNSS Navigation Systems in Aerial Vehicles (Multi-Rotors)",
-        "authors": "M. Mondal, S. Shidlovskiy, D. Shashev, M. Khaddour",
-        "venue": "2021 International Conference on Information Technology (ICIT)",
-        "year": 2021
+        "title": "Autonomous Infrared Guided Landing System for Unmanned Aerial Vehicles",
+        "authors": "MM Stanislav Shidlovskiy, Dmitriy Shashev, Mikhail Okunsky",
+        "venue": "Distributed Computer and Communication Networks: 24th International \u2026",
+        "year": 2022,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:_FxGoFyzp5QC"
+      },
+      {
+        "title": "Offline navigation (homing) of aerial vehicles (quadcopters) in GPS denied environments",
+        "authors": "M Mondal, S Poslavskiy",
+        "venue": "Unmanned Systems 9 (02), 119-127",
+        "year": 2021,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "title": "Reconfigurable flight-controller design in Simulink for test-implementing inter-operability of components and prototyping",
+        "authors": "M Mondal, MV Okunskiy",
+        "venue": "\u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b 4-\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0439 \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0438\u0438, 98-99",
+        "year": 2022,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:Se3iqnhoufwC"
+      },
+      {
+        "title": "Autonomous Infrared Guided UAV Precision Landing System",
+        "authors": "M Mondal, SV Shidlovsky, DV Shashev, MV Okunsky",
+        "venue": "\u0420\u0430\u0441\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u044b\u0435 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0435 \u0438 \u0442\u0435\u043b\u0435\u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0435\u0442\u0438: \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u2026",
+        "year": 2021,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:roLk4NBRz8UC"
+      },
+      {
+        "title": "Implementation of an open source communication protocol (MAVLink) between a flight controller and an on-board computer",
+        "authors": "M Mondal",
+        "venue": "",
+        "year": 2021,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:WF5omc3nYNoC"
+      },
+      {
+        "title": "Non-GNSS navigation systems in aerial vehicles (multi-rotors)",
+        "authors": "M Mondal, S Shidlovskiy, D Shashev, M Khaddour",
+        "venue": "2021 International Conference on Information Technology (ICIT), 451-455",
+        "year": 2021,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:YsMSGLbcyi4C"
       },
       {
         "title": "Survey of Denoising Methods for Inertial Sensor Measurements",
-        "authors": "M. Khaddour, S. Shidlovskiy, D. Shashev, M. Mondal",
-        "venue": "International Conference on Information Technology (ICIT)",
-        "year": 2021
+        "authors": "M Khaddour, S Shidlovskiy, D Shashev, M Mondal",
+        "venue": "2021 International Conference on Information Technology (ICIT), 787-790",
+        "year": 2021,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:W7OEmFMy1HYC"
       },
       {
-        "title": "Aadhaar (India): A National Biometric Identification Program (Experience and Implementation)",
-        "authors": "M. Mondal, S.L. Minkov",
-        "venue": "Innovatika",
-        "year": 2019
+        "title": "Camera assisted autonomous UAV landing",
+        "authors": "M Mondal, S Shidlovskiy, D Shashev",
+        "venue": "CEUR Workshop Proceedings 2744",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:eQOLeE2rZwMC"
       },
       {
-        "title": "Reconfigurable Flight-Controller Design in Simulink for Test-Implementing Interoperability of Components and Prototyping",
-        "authors": "M. Mondal, M.V. Okunskiy",
-        "venue": "Intelligent Systems of the 4th Industrial Revolution",
-        "year": 2022
+        "title": "Cellular network control in unmanned aerial vehicles",
+        "authors": "M Mondal, SV Shidlovskiy",
+        "venue": "",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:IjCSPb-OGe4C"
       },
       {
-        "title": "Autonomous Infrared-Guided UAV Precision Landing System",
-        "authors": "M. Mondal, S.V. Shidlovsky, D.V. Shashev, M.V. Okunsky",
-        "venue": "Distributed Computer and Communication Networks: 24th International Conference",
-        "year": 2021
+        "title": "Designing LBP-descriptor for reconfigurable computing environments",
+        "authors": "DV Shashev, AA Taganov, M Mondal, MV Okunsky",
+        "venue": "Journal of Physics: Conference Series 1611 (1), 012070",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:UeHWp8X0CEIC"
       },
       {
-        "title": "Implementation of an Open Source Communication Protocol (MAVLink) Between a Flight Controller and an On-Board Computer",
-        "authors": "M. Mondal",
-        "venue": "Innovatika",
-        "year": 2021
+        "title": "Digital India: E-government initiative",
+        "authors": "M Mondal, SL Minkov",
+        "venue": "",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:Tyk-4Ss8FVUC"
       },
       {
-        "title": "UAV Platform for Testing Autonomous Navigation Algorithms",
-        "authors": "M. Mondal, S.V. Shidlovskiy",
-        "venue": "Innovatika",
-        "year": 2020
+        "title": "Google Cartographer for navigation and mapping (SLAM)",
+        "authors": "M Mondal, SI Poslavskiy",
+        "venue": "",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:zYLM7Y9cAGgC"
       },
       {
-        "title": "Digital India: E-Government Initiative",
-        "authors": "M. Mondal, S.L. Minkov",
-        "venue": "Innovatika",
-        "year": 2020
+        "title": "UAV platform for testing autonomous navigation algorithms",
+        "authors": "M Mondal, SV Shidlovskiy",
+        "venue": "",
+        "year": 2020,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:Y0pCki6q_DkC"
       },
       {
-        "title": "Google Cartographer for Navigation and Mapping (SLAM)",
-        "authors": "M. Mondal, S.I. Poslavskiy",
-        "venue": "Innovatika",
-        "year": 2020
+        "title": "Aadhaar (India): a national biometric identification program (experience and implementation)",
+        "authors": "M Mondal, SL Minkov",
+        "venue": "",
+        "year": 2019,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:d1gkVwhDpl0C"
       },
       {
-        "title": "Cellular Network Control in Unmanned Aerial Vehicles",
-        "authors": "M. Mondal, S.V. Shidlovskiy",
-        "venue": "Innovatika",
-        "year": 2020
+        "title": "Aadhaar (\u0418\u043d\u0434\u0438\u044f): \u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u0431\u0438\u043e\u043c\u0435\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438 (\u043e\u043f\u044b\u0442 \u0438 \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f)",
+        "authors": "M Mondal, SL Minkov",
+        "venue": "\u0418\u043d\u043d\u043e\u0432\u0430\u0442\u0438\u043a\u0430-2019: \u0441\u0431\u043e\u0440\u043d\u0438\u043a \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432 XV \u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0439 \u0448\u043a\u043e\u043b\u044b-\u043a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0446\u0438\u0438 \u2026",
+        "year": 2019,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:UebtZRa9Y70C"
       },
       {
-        "title": "Aadhaar (India): National Biometric Identification Program (Experience and Implementation)",
-        "authors": "M. Mondal, S.L. Minkov",
-        "venue": "Innovatika-2019: Proceedings of the XV International School-Conference",
-        "year": 2019
-      },
-      {
-        "title": "Integration of SLAM and Obstacle Avoidance Algorithms",
-        "authors": "S.I. Poslavskiy, M. Mondal",
-        "venue": "Innovatika-2019: Proceedings of the XV International School-Conference",
-        "year": 2019
+        "title": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f SLAM \u0438 Obstacle Avoidance \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u043e\u0432",
+        "authors": "\u0421\u0418 \u041f\u043e\u0441\u043b\u0430\u0432\u0441\u043a\u0438\u0439, \u041c \u041c\u043e\u043d\u0434\u0430\u043b",
+        "venue": "",
+        "year": 2019,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:9yKSN-GCB0IC"
       }
     ]
   },
