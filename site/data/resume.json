@@ -323,7 +323,7 @@
       {
         "title": "Implementation of an open source communication protocol (MAVLink) between a flight controller and an on-board computer",
         "authors": "M Mondal",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2021,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:WF5omc3nYNoC"
       },
@@ -351,7 +351,7 @@
       {
         "title": "Cellular network control in unmanned aerial vehicles",
         "authors": "M Mondal, SV Shidlovskiy",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2020,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:IjCSPb-OGe4C"
       },
@@ -365,28 +365,28 @@
       {
         "title": "Digital India: E-government initiative",
         "authors": "M Mondal, SL Minkov",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2020,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:Tyk-4Ss8FVUC"
       },
       {
         "title": "Google Cartographer for navigation and mapping (SLAM)",
         "authors": "M Mondal, SI Poslavskiy",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2020,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:zYLM7Y9cAGgC"
       },
       {
         "title": "UAV platform for testing autonomous navigation algorithms",
         "authors": "M Mondal, SV Shidlovskiy",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2020,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:Y0pCki6q_DkC"
       },
       {
         "title": "Aadhaar (India): a national biometric identification program (experience and implementation)",
         "authors": "M Mondal, SL Minkov",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2019,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:d1gkVwhDpl0C"
       },
@@ -400,7 +400,7 @@
       {
         "title": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f SLAM \u0438 Obstacle Avoidance \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u043e\u0432",
         "authors": "\u0421\u0418 \u041f\u043e\u0441\u043b\u0430\u0432\u0441\u043a\u0438\u0439, \u041c \u041c\u043e\u043d\u0434\u0430\u043b",
-        "venue": "",
+        "venue": "Innovatika",
         "year": 2019,
         "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:9yKSN-GCB0IC"
       }
@@ -410,12 +410,12 @@
     {
       "title": "Program for Precise Landing of an Unmanned Aerial Vehicle Using Infrared Beacons",
       "certificate": "FIPS Certificate #2021610731",
-      "url": ""
+      "url": "https://elibrary.ru/item.asp?id=44762030"
     },
     {
       "title": "Automatic UAV Control System for a Given Trajectory",
       "certificate": "FIPS Certificate #2019664877",
-      "url": ""
+      "url": "https://elibrary.ru/item.asp?id=41364884"
     }
   ]
 }
