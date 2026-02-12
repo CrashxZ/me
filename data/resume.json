@@ -15,58 +15,51 @@
     "summary": "Autonomy researcher building and shipping full-stack robotic systems. Focused on reinforcement learning schedulers, CARLA/ROS orchestration, and resilient V2X connectivity for ground and aerial robots."
   },
   "skills": {
-    "Languages": [
+    "Programming": [
       "Python",
       "C++",
       "C",
-      "C#",
       "Java",
+      "MEAN Stack (MongoDB, ExpressJS, AngularJS, NodeJS)",
       "JavaScript",
-      "TypeScript",
-      "HTML/CSS",
-      "PHP"
+      "PHP",
+      "JQuery",
+      "C#"
     ],
-    "Robotics": [
-      "ROS",
-      "Gazebo",
-      "MAVLink",
+    "Robotic Stack": [
+      "ROS (Robot Operating System)",
+      "Gazebo (Simulation)",
+      "Matlab",
+      "Mavlink",
       "PX4",
-      "ArduPilot",
-      "VESC",
-      "Quanser QCar",
-      "TurtleBot3"
+      "ArduPilot"
     ],
-    "Autonomy": [
-      "Lane Keeping",
-      "Obstacle Avoidance",
-      "SLAM",
-      "Waypoint Following",
-      "Closed-loop CARLA control",
-      "Infrared-guided landing"
-    ],
-    "Learning": [
-      "Reinforcement Learning",
-      "LoRA/PEFT",
+    "AI/ML Stack": [
+      "Reinforcement Learning (DQN, PPO, A2C)",
+      "PyTorch",
+      "TensorFlow",
+      "OpenAI Gym",
+      "Transformers",
+      "HuggingFace",
+      "AlexNet",
+      "LLMs (Qwen, LLaMA)",
       "Prompt Engineering",
-      "Quantization"
+      "Scikit-Learn",
+      "NumPy",
+      "Pandas"
     ],
-    "Systems": [
-      "Nvidia Jetson TX2/Xavier/Orin",
-      "Raspberry Pi",
-      "HPC clusters (Slurm, A100)",
-      "FastAPI",
-      "React",
-      "Node/Express",
-      "AngularJS",
-      "MongoDB"
-    ],
-    "Networking": [
+    "5G & Protocols": [
       "OpenAirInterface 5G",
       "SRSRAN",
-      "ZeroTier",
-      "Lightbridge",
-      "V2X",
-      "WebRTC"
+      "3GPP Stack (PHY, MAC, RLC, RRC, PDCP)",
+      "Wireshark",
+      "FTM Tools"
+    ],
+    "Hardware Stack": [
+      "Flight Controllers (DJI N3, M600, Pixhawk)",
+      "Drive Stack (F1Tenth VESCs, Quanser QCar, Turtlebot 3)",
+      "SBCs (Raspberry Pi, Jetson TX2/Xavier/Orin)",
+      "Sensors (Velodyne VLP-16, FLIR Duo Pro R, Intel Realsense, OAK-D)"
     ]
   },
   "experience": [
@@ -78,7 +71,7 @@
       "highlights": [
         "Designed and deployed MIND-CAVs, a browser-based CARLA orchestration system with LLM-assisted intent generation, FastAPI backend, React dashboard, and WebRTC streaming for closed-loop autonomy experiments.",
         "Built autonomous driving features on F1Tenth and QCar robots using ROS on Nvidia Jetson TX2, delivering lane keeping, obstacle avoidance, SLAM, and autonomous waypoint following.",
-        "Integrated open-source 5G stacks (OpenAirInterface, SRSRAN) on robotic platforms to enable low-latency V2V/V2I communication.",
+        "Researched and deployed open-source 5G stacks (OpenAirInterface and SRSRAN) on ARM-based SBCs (Nvidia Jetson TX2) integrated with autonomous robotic platforms (F1Tenth, Quanser QCar); enabled low-latency V2V and V2I communication and supported field testing of 3GPP-compliant 5G NR features across PHY-PDCP layers.",
         "Developed a reinforcement-learning charge-scheduling agent for mobile chargers in wireless powered communication networks, increasing sensor survival by ~20% while reducing travel distance by 5%.",
         "Implemented autonomy on TurtleBot3 with ROS, including obstacle avoidance, SLAM, and waypoint following with a streamlined deployment pipeline."
       ]
