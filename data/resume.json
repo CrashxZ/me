@@ -133,6 +133,11 @@
       "demo": "",
       "videos": [
         {
+          "src": "../assets/video/MIND_CAV%20DEMO.mp4",
+          "type": "video/mp4",
+          "label": "Overview"
+        },
+        {
           "src": "../assets/video/mindcav1.webm",
           "type": "video/webm",
           "label": "Telemetry and orchestration flow"
