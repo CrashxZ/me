@@ -69,7 +69,7 @@
       "role": "Research Assistant",
       "dates": "2022 \u2013 Present",
       "highlights": [
-        "Designed and deployed MIND-CAVs, a browser-based CARLA orchestration system with LLM-assisted intent generation, FastAPI backend, React dashboard, and WebRTC streaming for closed-loop autonomy experiments.",
+        "Designed and deployed MIND-CAVs, a browser-based CARLA orchestration system for intent-driven autonomy in connected autonomous vehicles; combines LLM-assisted structured intent generation, V2X exchange, edge-agent negotiation, a FastAPI backend, React dashboard, WebRTC streaming, real-time telemetry, scenario control, and dataset capture for closed-loop autonomy experiments.",
         "Built autonomous driving features on F1Tenth and QCar robots using ROS on Nvidia Jetson TX2, delivering lane keeping, obstacle avoidance, SLAM, and autonomous waypoint following.",
         "Researched and deployed open-source 5G stacks (OpenAirInterface and SRSRAN) on ARM-based SBCs (Nvidia Jetson TX2) integrated with autonomous robotic platforms (F1Tenth, Quanser QCar); enabled low-latency V2V and V2I communication and supported field testing of 3GPP-compliant 5G NR features across PHY-PDCP layers.",
         "Developed a reinforcement-learning charge-scheduling agent for mobile chargers in wireless powered communication networks, increasing sensor survival by ~20% while reducing travel distance by 5%.",
@@ -125,9 +125,10 @@
       ],
       "details": [
         "FastAPI backend orchestrates CARLA scenarios and WebSocket control flows.",
-        "React/Tailwind dashboard with telemetry overlays, control panels, and intent tooling.",
-        "Dual video paths (MJPEG and WebRTC) for low-latency monitoring.",
-        "Frame capture pipeline exports telemetry and image datasets for experiments."
+        "Vehicles abstract observations into structured intents, exchange them over V2X, and receive globally consistent coordination plans from roadside edge agents.",
+        "React/Tailwind dashboard with telemetry overlays, control panels, LLM-assisted intent tooling, and dual MJPEG/WebRTC video paths.",
+        "Cloud logging records decisions for auditing and continual retraining, while frame capture exports telemetry and image datasets for experiments.",
+        "Evaluated multi-lane highway scenarios with conflicting maneuvers and route-constrained exits, improving maneuver completion time and reducing unsafe proximity and unnecessary braking versus isolated and baseline arbitration policies."
       ],
       "code": "https://github.com/CrashxZ/AutoLLM",
       "demo": "",
@@ -149,7 +150,12 @@
         }
       ],
       "archImage": "",
-      "related": []
+      "related": [
+        {
+          "title": "MIND-CAVs: Multi-Intelligence Negotiation and Decision System for CAVs based on Intent-Driven Autonomy",
+          "url": "https://arxiv.org/abs/2607.14688"
+        }
+      ]
     },
     {
       "slug": "unidash5g",
@@ -276,6 +282,13 @@
   ],
   "publications": {
     "Publications": [
+      {
+        "title": "MIND-CAVs: Multi-Intelligence Negotiation and Decision System for CAVs based on Intent-Driven Autonomy",
+        "authors": "M Mondal, Y Feng, Y Luo, S Han",
+        "venue": "arXiv preprint arXiv:2607.14688",
+        "year": 2026,
+        "url": "https://arxiv.org/abs/2607.14688"
+      },
       {
         "title": "Deep Q-Learning-Based Mobile Charger Path Planning in Wireless Powered Communication Networks",
         "authors": "M Mondal, F Dou, J Bi, S Han",

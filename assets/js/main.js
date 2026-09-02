@@ -196,7 +196,10 @@ function renderProjectPage(data, slug) {
 
   if (relatedEl) {
     if (project.related && project.related.length) {
-      relatedEl.innerHTML = project.related.map((r) => `<li>${r}</li>`).join('');
+      relatedEl.innerHTML = project.related.map((r) => {
+        if (typeof r === 'string') return `<li>${r}</li>`;
+        return `<li><a href="${r.url}" target="_blank" rel="noreferrer">${r.title}</a></li>`;
+      }).join('');
     } else {
       relatedEl.innerHTML = '<li>No related publications or patents listed.</li>';
     }
