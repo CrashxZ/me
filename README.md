@@ -14,7 +14,7 @@ Static site for showcasing robotics/autonomy work. No build tools required.
 ## Assets
 - Place images in `assets/img/` (e.g., `assets/img/mind-cavs.jpg`, `assets/img/mind-cavs-arch.png`).
 - Place videos in `assets/video/` (e.g., `assets/video/mind-cavs.mp4`).
-- Profile photo can replace `assets/img/profile.jpg`.
+- Profile photo can replace `assets/img/profile.png`.
 
 ## Content updates
 - Edit `data/resume.json` to update contact info, skills, experience, projects, publications, and patents.

@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Mainak Mondal",
-    "title": "PhD Researcher \u2014 Autonomous Robotics & Networked Systems",
+    "title": "Autonomous Systems Engineer",
     "location": "Mansfield, CT, USA",
     "email": "mainakme2140@gmail.com",
     "phone": "+1-860-634-2405",
@@ -12,57 +12,72 @@
       "scholar": "https://scholar.google.com/citations?user=WGYA1csAAAAJ",
       "resume": "main.pdf"
     },
-    "summary": "Autonomy researcher building and shipping full-stack robotic systems. Focused on reinforcement learning schedulers, CARLA/ROS orchestration, and resilient V2X connectivity for ground and aerial robots."
+    "summary": "I build and validate autonomous systems across robotics, edge compute, AI, and wireless networks - from physical test automation to connected-vehicle orchestration."
   },
   "skills": {
-    "Programming": [
+    "Programming & Web": [
       "Python",
       "C++",
       "C",
       "Java",
-      "MEAN Stack (MongoDB, ExpressJS, AngularJS, NodeJS)",
-      "JavaScript",
-      "PHP",
-      "JQuery",
-      "C#"
+      "JavaScript / TypeScript",
+      "C# / ASP.NET",
+      "PHP / jQuery",
+      "MongoDB / Express / Angular / Node.js",
+      "FastAPI / React"
     ],
-    "Robotic Stack": [
-      "ROS (Robot Operating System)",
-      "Gazebo (Simulation)",
-      "Matlab",
-      "Mavlink",
-      "PX4",
-      "ArduPilot"
+    "Robotics & Autonomy": [
+      "ROS",
+      "CARLA",
+      "Gazebo",
+      "MATLAB",
+      "SLAM",
+      "PX4 / ArduPilot",
+      "MAVLink",
+      "F1Tenth / QCar / TurtleBot3"
     ],
-    "AI/ML Stack": [
-      "Reinforcement Learning (DQN, PPO, A2C)",
+    "AI & Decision Systems": [
       "PyTorch",
       "TensorFlow",
       "OpenAI Gym",
-      "Transformers",
-      "HuggingFace",
-      "AlexNet",
+      "Reinforcement Learning (DQN, PPO, A2C)",
       "LLMs (Qwen, LLaMA)",
+      "Transformers / Hugging Face",
+      "Computer Vision / AlexNet",
       "Prompt Engineering",
-      "Scikit-Learn",
-      "NumPy",
-      "Pandas"
+      "Scikit-learn / NumPy / Pandas"
     ],
-    "5G & Protocols": [
-      "OpenAirInterface 5G",
-      "SRSRAN",
-      "3GPP Stack (PHY, MAC, RLC, RRC, PDCP)",
-      "Wireshark",
-      "FTM Tools"
+    "Edge, Networks & Infrastructure": [
+      "OpenAirInterface / srsRAN",
+      "3GPP NR (PHY-PDCP)",
+      "Proxmox / Linux / LXC",
+      "VLANs / Tailscale / Cloudflare Tunnels",
+      "Wireshark / FTM Tools",
+      "MCP / Local LLMs",
+      "WebRTC / WebSockets",
+      "Git / CI workflows"
     ],
-    "Hardware Stack": [
-      "Flight Controllers (DJI N3, M600, Pixhawk)",
-      "Drive Stack (F1Tenth VESCs, Quanser QCar, Turtlebot 3)",
-      "SBCs (Raspberry Pi, Jetson TX2/Xavier/Orin)",
-      "Sensors (Velodyne VLP-16, FLIR Duo Pro R, Intel Realsense, OAK-D)"
+    "Hardware & Platforms": [
+      "Jetson TX2 / Xavier / Orin",
+      "Raspberry Pi",
+      "DJI N3 / M600 / Pixhawk",
+      "F1Tenth VESC / Quanser QCar",
+      "Velodyne / FLIR / RealSense / OAK-D"
     ]
   },
   "experience": [
+    {
+      "organization": "Western Digital",
+      "location": "San Jose, California, USA",
+      "role": "PhD Engineering Intern - HAMR Component Testing",
+      "dates": "Jun 2026 - Aug 2026",
+      "highlights": [
+        "Developed and deployed automation tools for physical hardware testing workflows, reducing manual engineering effort by approximately 2,000 hours/year across a five-person team while enabling automated test tracking, failure detection, and faster experimental iteration.",
+        "Designed an end-to-end data pipeline to automatically retrieve, process, and upload experimental test data to a centralized visualization and analytics platform; developed interactive tools to identify trends and extract actionable insights, reducing manual data-processing overhead and accelerating engineering analysis.",
+        "Developed an agentic AI system using Model Context Protocol (MCP) to enable natural-language querying, validation, and analysis of HAMR test data, improving traceability and accelerating insight generation."
+      ],
+      "portfolioSummary": "Automated HAMR hardware testing, saving approximately 2,000 engineering hours per year across a five-person team."
+    },
     {
       "organization": "University of Connecticut \u2014 Cyber-Physical Systems Laboratory",
       "location": "Connecticut, USA",
@@ -74,7 +89,8 @@
         "Researched and deployed open-source 5G stacks (OpenAirInterface and SRSRAN) on ARM-based SBCs (Nvidia Jetson TX2) integrated with autonomous robotic platforms (F1Tenth, Quanser QCar); enabled low-latency V2V and V2I communication and supported field testing of 3GPP-compliant 5G NR features across PHY-PDCP layers.",
         "Developed a reinforcement-learning charge-scheduling agent for mobile chargers in wireless powered communication networks, increasing sensor survival by ~20% while reducing travel distance by 5%.",
         "Implemented autonomy on TurtleBot3 with ROS, including obstacle avoidance, SLAM, and waypoint following with a streamlined deployment pipeline."
-      ]
+      ],
+      "portfolioSummary": "Research in connected autonomy, robotic platforms, and wireless powered sensor networks."
     },
     {
       "organization": "NR Tomsk State University \u2014 High Performance Reconfigurable Systems Lab",
@@ -87,7 +103,8 @@
         "Designed great-circle return-to-home control using PX4Flow for fail-safe navigation in GNSS-denied settings.",
         "Developed medical/emergency delivery drones with automated payload handling during COVID-19.",
         "Created an autonomous scout/attack UAV with radar-based threat detection and AlexNet-based interception, plus a ruggedized scout tank for hazardous environments."
-      ]
+      ],
+      "portfolioSummary": "Developed UAV navigation, control, and landing systems for operation in GPS-denied environments."
     },
     {
       "organization": "Spar Up Sports Technologies Limited",
@@ -97,7 +114,8 @@
       "highlights": [
         "Delivered APIs for the MEAN stack platform and optimized a hybrid Ionic app, cutting load times by 300%.",
         "Partnered with clients to gather requirements, design mockups, and deliver tailored features end-to-end."
-      ]
+      ],
+      "portfolioSummary": "Built web APIs and hybrid mobile applications, from client requirements through delivery."
     },
     {
       "organization": "Tata Technologies Limited",
@@ -107,13 +125,21 @@
       "highlights": [
         "Redesigned a plant complaint management system for the web, improving accessibility and enterprise integration.",
         "Built the system with a C# backend and ASP.NET frontend following SOLID principles and integrated with inventory and general management tools."
-      ]
+      ],
+      "portfolioSummary": "Developed a web-based plant complaint management system with enterprise integrations."
     }
   ],
   "projects": [
     {
       "slug": "mindcav",
-      "title": "MINDCAV AutoLLM Dashboard",
+      "featured": true,
+      "page": "projects/mindcav.html",
+      "category": "Autonomy",
+      "status": "Research prototype",
+      "evidence": "Paper + working demos",
+      "challenge": "Turn open-ended vehicle intents into typed, validated plans while preventing conflicting maneuvers at low latency.",
+      "outcome": "95.4% safe completion, 0.8867 typed-output accuracy, and 31.95 ms local p95 arbitration across 32 simulated vehicles.",
+      "title": "MIND-CAVs Autonomous-Vehicle Orchestration",
       "impact": "CARLA AI-in-the-loop dashboard with LLM intent, realtime telemetry, and dataset capture.",
       "tags": [
         "CARLA",
@@ -159,6 +185,13 @@
     },
     {
       "slug": "unidash5g",
+      "featured": true,
+      "page": "projects/unidash5g.html",
+      "category": "5G & Edge",
+      "status": "Deployed dashboard",
+      "evidence": "Live demo + video",
+      "challenge": "Normalize telemetry from OAI and srsRAN into one operator-ready view without a local install.",
+      "outcome": "A live, serverless dashboard combines rolling radio metrics, UE status, and issue flags for rapid 5G RAN triage.",
       "title": "5G RAN Dashboard (srsRAN + OAI)",
       "impact": "Zero-install 5G telemetry dashboard with a unified schema for srsRAN and OpenAirInterface.",
       "tags": [
@@ -194,6 +227,9 @@
     },
     {
       "slug": "gym-track",
+      "page": "projects/gym-track.html",
+      "category": "Software",
+      "status": "Deployed web app",
       "title": "Gym Reps Tracker",
       "impact": "Vite + React tracker for workout plans, set counts, and weekly progress.",
       "tags": [
@@ -217,6 +253,9 @@
     },
     {
       "slug": "dji-follow-me",
+      "page": "projects/dji-follow-me.html",
+      "category": "UAV Systems",
+      "status": "Completed prototype",
       "title": "DJI IR + AprilTag Tracking",
       "impact": "Monocular AprilTag tracking for DJI A3/N3 with assisted landing and follow modes.",
       "tags": [
@@ -239,6 +278,9 @@
     },
     {
       "slug": "tello-coordinate-system",
+      "page": "projects/tello-coordinate-system.html",
+      "category": "Open Source",
+      "status": "Published utility",
       "title": "Tello Coordinate System Helper",
       "impact": "ENU/NED coordinate helpers for DJI Tello flight commands.",
       "tags": [
@@ -252,6 +294,259 @@
         "Lightweight utility for rapid Tello prototyping."
       ],
       "code": "https://github.com/CrashxZ/TelloCoordinateSystem",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "rl-charge-scheduler",
+      "page": "projects/rl-charge-scheduler.html",
+      "featured": true,
+      "category": "AI & Robotics",
+      "status": "Completed physical prototype",
+      "evidence": "ACM journal paper",
+      "challenge": "Balance sensor urgency against robot travel cost while handling sparse rewards and uncertain energy consumption.",
+      "outcome": "Improved average sensor survival by about 20% and reduced travel distance by 5% across simulation and TurtleBot testing.",
+      "title": "RL-Based Mobile Sensor-Charging Robot",
+      "impact": "A reinforcement-learning scheduler and ROS navigation pipeline for sustaining wireless sensor networks.",
+      "tags": [
+        "PyTorch",
+        "DQN",
+        "PPO",
+        "ROS",
+        "TurtleBot3"
+      ],
+      "details": [
+        "Evaluated DQN, PPO, A2C, and independent-DQN policies against classic and optimization-based baselines.",
+        "Connected charging decisions to ROS navigation, SLAM, obstacle avoidance, and waypoint execution on TurtleBot3.",
+        "Validated the approach in Gazebo-based simulation and a physical TurtleBot testbed."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": [
+        {
+          "label": "ACM paper",
+          "title": "Deep Q-Learning-Based Mobile Charger Path Planning in Wireless Powered Communication Networks",
+          "url": "https://dl.acm.org/doi/abs/10.1145/3763235"
+        }
+      ]
+    },
+    {
+      "slug": "ir-precision-landing",
+      "page": "projects/ir-precision-landing.html",
+      "featured": true,
+      "category": "UAV Systems",
+      "status": "Completed physical prototype",
+      "evidence": "Patent + publication",
+      "challenge": "Detect and track a landing target under changing lighting while maintaining stable control without GNSS.",
+      "outcome": "Physical flight tests improved landing precision by about 40% on mobile pads and produced related publications and patents.",
+      "title": "Infrared-Guided GPS-Denied UAV Landing",
+      "impact": "An infrared-beacon landing system for multirotor operation when GNSS is unavailable or unreliable.",
+      "tags": [
+        "UAV",
+        "ROS",
+        "MAVLink",
+        "Infrared",
+        "PX4"
+      ],
+      "details": [
+        "Integrated infrared beacons, onboard sensing, flight-control logic, and ROS/MAVLink communication.",
+        "Implemented the landing approach and conducted physical testing on a multirotor platform.",
+        "The resulting work is documented through publications and two related FIPS patents."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": [
+        {
+          "label": "Publication",
+          "title": "Autonomous Infrared Guided Landing System for Unmanned Aerial Vehicles",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:_FxGoFyzp5QC"
+        },
+        {
+          "label": "Patent",
+          "title": "Program for Precise Landing of an Unmanned Aerial Vehicle Using Infrared Beacons",
+          "url": "https://elibrary.ru/item.asp?id=44762030"
+        }
+      ]
+    },
+    {
+      "slug": "v2x-5g-stack",
+      "page": "projects/v2x-5g-stack.html",
+      "category": "5G & Edge",
+      "status": "In progress",
+      "title": "5G-Enabled Robotic Communication Platform",
+      "impact": "Experimental V2V and V2I connectivity for autonomous robots using open-source 5G stacks and edge computers.",
+      "tags": [
+        "OpenAirInterface",
+        "srsRAN",
+        "5G NR",
+        "USRP",
+        "Jetson TX2"
+      ],
+      "details": [
+        "Integrated OAI and srsRAN with Jetson TX2, F1Tenth, and Quanser QCar platforms.",
+        "Instrumented 3GPP NR behavior across PHY through PDCP for network experimentation and data collection.",
+        "Current work focuses on resolving the OAI EDAF gNB build and documenting repeatable end-to-end latency tests."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "f1tenth-autonomy",
+      "page": "projects/f1tenth-autonomy.html",
+      "category": "Robotics",
+      "status": "Completed platform integration",
+      "title": "F1Tenth and QCar Autonomy Stack",
+      "impact": "ROS autonomy features deployed on edge-powered robotic vehicle platforms.",
+      "tags": [
+        "ROS",
+        "F1Tenth",
+        "Quanser QCar",
+        "SLAM",
+        "Jetson TX2"
+      ],
+      "details": [
+        "Implemented lane keeping, obstacle avoidance, SLAM, and autonomous waypoint following.",
+        "Deployed the stack on NVIDIA Jetson TX2 edge computers.",
+        "Integrated vehicle autonomy with experimental V2V and V2I communication workflows."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "gnss-failsafe-nav",
+      "page": "projects/gnss-failsafe-nav.html",
+      "category": "UAV Systems",
+      "status": "Completed prototype",
+      "title": "GPS-Denied UAV Return-to-Home",
+      "impact": "Fail-safe multirotor homing using optical flow and onboard distance calculations when GNSS is unavailable.",
+      "tags": [
+        "PX4Flow",
+        "MAVLink",
+        "Optical Flow",
+        "Navigation",
+        "C++"
+      ],
+      "details": [
+        "Developed a non-GNSS homing algorithm using PX4Flow and Haversine-based distance calculations.",
+        "Integrated onboard state estimates with the flight-control workflow.",
+        "Evaluated localization drift, altitude-dependent optical flow, and environmental variation."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": [
+        {
+          "label": "Publication",
+          "title": "Offline navigation of aerial vehicles in GPS denied environments",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:qjMakFHDy7sC"
+        }
+      ]
+    },
+    {
+      "slug": "radar-scout-uav",
+      "page": "projects/radar-scout-uav.html",
+      "category": "UAV Systems",
+      "status": "Completed prototype",
+      "title": "Radar-Activated Scout and Interceptor UAV",
+      "impact": "A radar-triggered UAV with autonomous scan routines and onboard aerial-threat classification.",
+      "tags": [
+        "UAV",
+        "Radar",
+        "AlexNet",
+        "Computer Vision",
+        "Autonomy"
+      ],
+      "details": [
+        "Connected low-altitude radar detection to UAV activation and autonomous scanning.",
+        "Used an AlexNet-based classifier for real-time aerial-object identification.",
+        "Integrated autonomous flight routines and a net-based interception mechanism."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "medical-delivery-uav",
+      "category": "UAV Systems",
+      "status": "Completed prototype",
+      "title": "Autonomous Medical-Delivery Drone",
+      "impact": "A contact-minimized UAV workflow for transporting small medical and emergency supplies during COVID-19.",
+      "tags": [
+        "UAV",
+        "ArduPilot",
+        "MAVLink",
+        "Mission Planning",
+        "Telemetry"
+      ],
+      "details": [
+        "Integrated the vehicle, flight-control workflow, mission planning, and delivery payload.",
+        "Developed prototype software and assembled multirotor platforms for contactless distribution.",
+        "Conducted prototype testing while accounting for payload, endurance, communication, and safety constraints."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "hazardous-recon-robot",
+      "category": "Robotics",
+      "status": "Completed prototype",
+      "title": "Hazardous-Environment Reconnaissance Robot",
+      "impact": "A tracked robot for remote inspection of radiation- or gas-affected environments.",
+      "tags": [
+        "Mobile Robotics",
+        "Telemetry",
+        "Remote Control",
+        "Sensors",
+        "Integration"
+      ],
+      "details": [
+        "Integrated robot control, remote telemetry, and environmental sensor-data flow.",
+        "Designed for remote operation where direct human inspection would be unsafe.",
+        "Built as a master's project with sensor setup and calibration handled by other team members."
+      ],
+      "code": "",
+      "demo": "",
+      "videos": [],
+      "archImage": "",
+      "related": []
+    },
+    {
+      "slug": "ai-edge-homelab",
+      "category": "Hobby",
+      "status": "Home deployed / evolving",
+      "title": "Personal AI and Edge-Computing Homelab",
+      "impact": "Private infrastructure for self-hosted storage, media, remote services, local models, and agent experiments.",
+      "tags": [
+        "Proxmox",
+        "Linux",
+        "LXC",
+        "MCP",
+        "Local LLMs"
+      ],
+      "details": [
+        "Runs Proxmox VMs and LXCs, OpenMediaVault, Jellyfin, Tailscale, Cloudflare Tunnels, and a dedicated Hermes agent VM.",
+        "Uses custom MCP integrations for infrastructure monitoring and routine administration.",
+        "Next milestones include centralized observability, tested backups, storage-health alerts, GPU passthrough, and disaster-recovery documentation."
+      ],
+      "code": "",
       "demo": "",
       "videos": [],
       "archImage": "",
@@ -294,7 +589,7 @@
         "authors": "M Mondal, F Dou, J Bi, S Han",
         "venue": "ACM Transactions on Embedded Computing Systems 24 (6), 1-32",
         "year": 2025,
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WGYA1csAAAAJ&pagesize=100&citation_for_view=WGYA1csAAAAJ:0EnyYjriUFMC"
+        "url": "https://dl.acm.org/doi/abs/10.1145/3763235"
       },
       {
         "title": "Robust and Safe Multi-Agent Reinforcement Learning Framework with Communication for Autonomous Vehicles",

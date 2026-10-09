@@ -177,14 +177,6 @@ function renderProjectPage(data, slug) {
   const archSection = document.getElementById('project-arch-section');
 
   if (titleEl) titleEl.textContent = project.title;
-  document.title = `${project.title} | Mainak Mondal`;
-  if (document.getElementById('project-status')) document.getElementById('project-status').textContent = project.status;
-  const overview = document.getElementById('project-overview');
-  if (overview) {
-    overview.classList.toggle('hidden', !project.challenge || !project.outcome);
-    document.getElementById('project-challenge').textContent = project.challenge || '';
-    document.getElementById('project-outcome').textContent = project.outcome || '';
-  }
   if (impactEl) impactEl.textContent = project.impact;
   if (listEl) listEl.innerHTML = project.details.map((d) => `<li>${d}</li>`).join('');
   if (tagsEl) tagsEl.innerHTML = project.tags.map((t) => `<span class="chip">${t}</span>`).join('');
@@ -231,13 +223,13 @@ function renderProjectPage(data, slug) {
         return `<li><a href="${r.url}" target="_blank" rel="noreferrer">${r.title}</a></li>`;
       }).join('');
     } else {
-      document.getElementById('project-related-section')?.classList.add('hidden');
+      relatedEl.innerHTML = '<li>No related publications or patents listed.</li>';
     }
   }
 }
 
 function setupThemeToggle() {
-  const themeKey = document.body.dataset.defaultTheme ? 'editorial-theme' : 'theme';
+  const themeKey = document.body.dataset.page === 'home' ? 'editorial-theme' : 'theme';
   let stored = null;
   try {
     stored = localStorage.getItem(themeKey);
